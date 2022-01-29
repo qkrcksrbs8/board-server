@@ -39,9 +39,9 @@
             </tread>
             <tbody>
                 <tr th:each="board : ${boards}">
-                <td th:text="${board.id}">Mark</td>
-                <td><a th:text="${board.title}" th:href="@{/board/form(id=${board.id})}">Otto</a></td>
-                <td>mdo</td>
+                    <td th:text="${board.id}">Mark</td>
+                    <td><a th:text="${board.title}" th:href="@{/board/form(id=${board.id})}">Otto</a></td>
+                    <td th:text="${board.user.username}">mdo</td>
                 </tr>
             </tbody>
        </table>
