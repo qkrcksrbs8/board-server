@@ -57,4 +57,5 @@ class UserApiController {
     void deleteUser(@PathVariable Long id) {
         repository.deleteById(id);
     }
+
 }
