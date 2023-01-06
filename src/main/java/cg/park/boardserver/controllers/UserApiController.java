@@ -37,7 +37,6 @@ class UserApiController {
 
     @PutMapping("/users/{id}")
     User replaceUser(@RequestBody User newUser, @PathVariable Long id) {
-        // rest
 
         return repository.findById(id)
                 .map(user -> {
