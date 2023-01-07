@@ -19,9 +19,7 @@ class UserApiController {
     @GetMapping("/users")
     List<User> all() {
         List<User> users = repository.findAll();
-        log.debug("호출 전");
         users.get(0).getBoards().size();
-        log.debug("호출 후");
         return users;
     }
 
