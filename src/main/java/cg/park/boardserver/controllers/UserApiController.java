@@ -13,6 +13,7 @@ import java.util.List;
 @Slf4j
 class UserApiController {
 // board
+    // rest
     @Autowired
     private UserRepository repository;
 
