@@ -12,8 +12,7 @@ import java.util.List;
 @RequestMapping("/api")
 @Slf4j
 class UserApiController {
-// board
-    // rest
+
     @Autowired
     private UserRepository repository;
 
