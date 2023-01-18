@@ -13,6 +13,8 @@ import java.util.List;
 @Slf4j
 class UserApiController {
 
+    // rest 아키텍쳐 메서드로 표현
+
     @Autowired
     private UserRepository repository;
 
