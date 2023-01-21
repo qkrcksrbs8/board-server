@@ -14,6 +14,7 @@ import java.util.List;
 class UserApiController {
 
     // rest 아키텍쳐 메서드로 표현
+    // pathvariable 추가
 
     @Autowired
     private UserRepository repository;
