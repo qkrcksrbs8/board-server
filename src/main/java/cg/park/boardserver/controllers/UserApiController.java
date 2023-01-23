@@ -13,10 +13,6 @@ import java.util.List;
 @Slf4j
 class UserApiController {
 
-    // rest 아키텍쳐 메서드로 표현
-    // pathvariable 추가
-    // 오버로딩
-
     @Autowired
     private UserRepository repository;
 
