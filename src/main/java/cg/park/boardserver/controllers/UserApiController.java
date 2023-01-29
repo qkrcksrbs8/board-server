@@ -14,6 +14,7 @@ import java.util.List;
 class UserApiController {
 
     //@RestController
+    //@RestController
     @Autowired
     private UserRepository repository;
 
