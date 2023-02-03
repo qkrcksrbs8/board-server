@@ -13,8 +13,6 @@ import java.util.List;
 @Slf4j
 class UserApiController {
 
-    //@RestController
-    //@RestController
     @Autowired
     private UserRepository repository;
 
