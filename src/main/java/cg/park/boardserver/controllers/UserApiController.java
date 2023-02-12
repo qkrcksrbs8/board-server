@@ -38,8 +38,6 @@ class UserApiController {
 
         return repository.findById(id)
                 .map(user -> {
-//                    User.setTitle(newUser.getTitle());
-//                    User.setContent(newUser.getContent());
                     user.getBoards().clear();
                     user.setBoards(newUser.getBoards());
                     user.getBoards().stream().forEach(board -> {board.setUser(user);});
