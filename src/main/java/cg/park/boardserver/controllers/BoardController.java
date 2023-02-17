@@ -58,9 +58,9 @@ public class BoardController {
             , Authentication authentication
     ) {
         boardValidator.validate(board, bindingResult);
-        if (bindingResult.hasErrors()) {
+        if (bindingResult.hasErrors())
             return "board/form";
-        }
+
         Authentication a = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
         boardService.save(username, board);
