@@ -60,7 +60,6 @@ public class BoardController {
         if (bindingResult.hasErrors())
             return "board/form";
 
-        Authentication a = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
         boardService.save(username, board);
         boardRepository.save(board);
